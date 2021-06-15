@@ -53,7 +53,7 @@ std::array<std::array<uint8_t, width>, height> decompressGrayscale(const std::ve
 void printMap(const std::array<std::array<std::uint8_t, width>, height>& arr){
     for(size_t i=0; i<width; ++i){
         for(size_t j=0; j<height; ++j){
-            std::cout << (int)arr[i].at(j);
+            std::cout << arr[i].at(j);
         }
         std::cout << '\n';
     }
